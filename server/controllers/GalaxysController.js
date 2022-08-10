@@ -39,9 +39,6 @@ export class GalaxysController extends BaseController {
         }
     }
 
-
-
-
     async deleteGalaxy(req, res, next) {
         try {
             let galaxy = await galaxysService.deleteGalaxy(req.params.galaxyId)
